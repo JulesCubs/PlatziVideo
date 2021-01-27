@@ -1,0 +1,30 @@
+.search{
+    height: 100%;
+    margin: 50px;
+    width: 100%;
+}
+.search__title{
+    background-color: rgba(255, 255, 255, 0);
+    color: #f4f6ff;
+    font-size: 20px;
+    margin-left: -110px;
+    text-align: center;
+}
+input{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #f4f6ff;
+    border-radius: 50px;
+    color: #f4f6ff;
+    font-family:'Quick-sand', sans-serif;
+    font-size: 15px;
+    height: 35px;
+    margin-top: 30px;
+    margin-left: 120px;
+    outline: none;
+    padding: 0px 20px;
+    width: 70%;
+    position: relative;
+}
+::placeholder{
+    color: #f4f6ff;
+}
