@@ -1,7 +1,7 @@
 import React from 'react';
 import  ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, compose } from 'redux';
 // import App from './containers/App'; Asi quedo al final del curso practico de React
 // Este cambio se realiza porque empezamos a crear rutas para nuestro proyecto
 import reducer from './reducers';
@@ -11,6 +11,7 @@ const initialState = {
     "user": {},
     "playing": {},
     "myList": [],
+    "searchResult": [],
     "trends": [
         {
             "id": 2,
@@ -173,7 +174,8 @@ const initialState = {
     ]
 }
 
-const store = createStore(reducer, initialState)
+const composeEnhacers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducer, initialState, composeEnhacers());
 
 ReactDOM.render(
     <Provider store={ store }>

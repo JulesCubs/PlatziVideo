@@ -6,6 +6,9 @@
     justify-content: space-between;
     width: 100%;
 }
+.isLogin, .isRegister {
+    background-color: #79bac1;
+}
 .header__img{
     height: 12%;
     margin-top: 20px;
@@ -24,6 +27,8 @@
     margin-top: 10px;
     margin-right: 0px;
     width: 70px;
+    border-radius: 100%;
+    object-fit: cover;
 }
 .header__menu--profile p{
     color: #f4f6ff;
